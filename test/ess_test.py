@@ -5,6 +5,7 @@ import tempfile
 import unittest
 from unittest.mock import MagicMock
 import cProfile
+from pygame.tests import *
 
 from pygame.tests.test_utils import png
 import pygame.image, pygame.pkgdata
