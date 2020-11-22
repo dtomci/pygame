@@ -11,6 +11,7 @@ jobs:
   test:
     executor: python/default
     steps:
+      - checkout
       - run:
           command: ls
           name: Test
