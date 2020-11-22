@@ -7,8 +7,7 @@ jobs:
   test:
     executor: python/default
     steps:
-      - persist_to_workspace:
-          - root: .
+      - attach_workspace:
           - paths:
               - dtomci-pygame/test
       - run:
