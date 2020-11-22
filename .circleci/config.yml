@@ -5,10 +5,11 @@ orbs:
 
 jobs:
   test:
+    working_directory: ~/dtomci-pygame
     executor: python/default
     steps:
       - run:
-          command: ./ess_test.py test
+          command: ./test/ess_test.py test
           name: Test
 
 workflows:
