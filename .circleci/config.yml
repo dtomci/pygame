@@ -7,7 +7,10 @@ jobs:
   test:
     executor: python/default
     steps:
-      - save_cache:
+      - persist_to_workspace:
+          - root: .
+          - paths:
+              - dtomci-pygame/test
       - run:
           command: ./ess_test.py test
           name: Test
