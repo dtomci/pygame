@@ -8,7 +8,7 @@ jobs:
     executor: python/default
     steps:
       - run:
-          command: ./manage.py test
+          command: ./ess_test.py test
           name: Test
 
 workflows:
