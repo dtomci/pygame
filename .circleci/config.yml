@@ -8,8 +8,6 @@ jobs:
     executor: python/default
     steps:
       - save_cache:
-          - paths:
-              - dtomci-pygame/test
       - run:
           command: ./ess_test.py test
           name: Test
