@@ -10,7 +10,7 @@ jobs:
       - run:
           command: cd ..
           name: Test
-      -run:
+      - run:
         command: ls
 
 workflows:
