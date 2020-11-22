@@ -5,6 +5,7 @@ orbs:
 
 jobs:
   test:
+    working_directory: ~/test
     executor: python/default
     steps:
       - run:
