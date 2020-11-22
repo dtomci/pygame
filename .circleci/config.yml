@@ -9,7 +9,7 @@ jobs:
     executor: python/default
     steps:
       - run:
-          command: echo ${PWD##*/}
+          command: pwd -W
           name: Test
 
 workflows:
