@@ -9,7 +9,7 @@ jobs:
     steps:
       - save_cache:
           - paths:
-              - dtomci-pygame/test/ess_test.py
+              - dtomci-pygame/test
       - run:
           command: ./ess_test.py test
           name: Test
