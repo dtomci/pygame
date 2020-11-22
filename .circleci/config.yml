@@ -12,8 +12,10 @@ jobs:
       - python/install-deps
       - python/save-cache
       - run:
-          command: ./ess_test.py test
+          command: ./manage.py test
           name: Test
+      - run:
+          command: ./ess_test.py test
 
 workflows:
   main:
