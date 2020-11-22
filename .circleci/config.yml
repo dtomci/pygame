@@ -9,7 +9,7 @@ jobs:
     steps:
       - checkout
       - run:
-          command: cd test; chmod +x ess_test.py; ./ess_test.py test
+          command: cd test; chmod +x ess_test.py; python ess_test.py test
           name: Test
 
 workflows:
