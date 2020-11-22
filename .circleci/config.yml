@@ -5,11 +5,12 @@ orbs:
 
 attach_workspace: dtomci-pygame/test
 
+persist_to_workspace: dtomci-pygame/test
+
 jobs:
   test:
     executor: python/default
     steps:
-      - persist_to_workspace: dtomci-pygame/test
       - run:
           command: ls
           name: Test
