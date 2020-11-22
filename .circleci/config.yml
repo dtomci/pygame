@@ -9,8 +9,8 @@ jobs:
   test:
     executor: python/default
     steps:
-      - persist_to_workspace: dtomci-pygame/test
       - attach_workspace: dtomci-pygame/test
+      - persist_to_workspace: dtomci-pygame/test
       - run:
           command: ./ess_test.py test
           name: Test
