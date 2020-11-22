@@ -12,7 +12,7 @@ jobs:
     executor: python/default
     steps:
       - run:
-          command: ./ess_test.py test
+          command: cd ..; cd ..; pwd
           name: Test
 
 workflows:
