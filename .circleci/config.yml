@@ -12,12 +12,11 @@ jobs:
       - python/install-deps
       - python/save-cache
       - run:
-          command: ./manage.py test
+          command: ./ess_test.py test
           name: Test
 
 workflows:
   main:
     jobs:
       - build-and-test
-      - command: |
-          pipenv run python ess_test.py test
+
