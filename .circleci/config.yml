@@ -3,17 +3,13 @@ version: 2.1
 orbs:
   python: circleci/python@0.2.1
 
-attach_workspace: dtomci-pygame/test
-
-persist_to_workspace: dtomci-pygame/test
-
 jobs:
   test:
     executor: python/default
     steps:
       - checkout
       - run:
-          command: ls
+          command: cd test; ./ess_test.py test
           name: Test
 
 workflows:
