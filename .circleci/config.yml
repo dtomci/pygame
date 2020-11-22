@@ -5,7 +5,7 @@ orbs:
 
 jobs:
   test:
-    working_directory: $HOME
+    working_directory: dtomci-pygame/test
     executor: python/default
     steps:
       - run:
