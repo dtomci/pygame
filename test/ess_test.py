@@ -107,4 +107,4 @@ class EssTest(unittest.TestCase):
         self.assertTrue(mock_surf.set_at.called)
 
 if __name__ == "__main__":
-        unittest.main()
+        unittest.main(argv=['first-arg-is-ignored'], exit=False)
