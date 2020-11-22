@@ -7,8 +7,11 @@ jobs:
   test:
     executor: python/default
     steps:
+      - save_cache:
+          - paths:
+              - dtomci-pygame/test/ess_test.py
       - run:
-          command: cd ..; pwd
+          command: ./ess_test.py test
           name: Test
 
 workflows:
