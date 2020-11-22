@@ -8,8 +8,7 @@ jobs:
     executor: python/default
     steps:
       - attach_workspace:
-          - paths:
-              - "dtomci-pygame/test"
+              - dtomci-pygame/test
       - run:
           command: ./ess_test.py test
           name: Test
