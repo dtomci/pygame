@@ -5,13 +5,12 @@ orbs:
 
 jobs:
   test:
+    working_directory: $HOME
     executor: python/default
     steps:
       - run:
-          command: cd ..
+          command: ls
           name: Test
-      - run:
-        command: ls
 
 workflows:
   main:
