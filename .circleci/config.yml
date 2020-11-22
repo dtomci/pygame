@@ -19,5 +19,5 @@ workflows:
   main:
     jobs:
       - build-and-test
-      - command:
+      - command: |
           pipenv run python ess_test.py test
